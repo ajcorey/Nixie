@@ -1,8 +1,11 @@
 #include <WiFi.h>
 #include "time.h"
+#include "pw.h"
 
-const char *ssid="itHertzwhenIP";
-const char *password="11@35*13";
+Wifi_Login wifi;
+
+const char *ssid= wifi.ssid;
+const char *password= wifi.password;
 
 const char *ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec =  -18000;
